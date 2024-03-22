@@ -1,0 +1,99 @@
+# Main options
+title-text: ""
+title-color: "#000000"
+
+desktop-image: "framework-background-nologo.png"
+
+terminal-border: "0"
+#terminal-left: "965"
+#terminal-top: "505"
+#terminal-width: "640"
+#terminal-height: "384"
+terminal-width: "100%"
+terminal-height: "100%"
+#terminal-box: "terminal_box/terminal_box_*.png"
+
++ label {
+        left = 0
+        top = 0
+        width = 2560
+
+        color = "#000000"
+        align = center
+        text = "@KEYMAP_MIDDLE@"
+}
+
++ label {
+        left = 0
+        top = 1550
+        width = 2560
+	align = center
+      
+        id = "__timeout__"
+      
+        font = "Anonymous Pro Regular 36"
+        text = "The highlighted entry will be executed automatically in %ds..."
+        color = "#FFFFFF"
+}
+
++ boot_menu {
+  left = 20%
+  top = 1168
+  width = 62%
+  height = 430
+  menu_pixmap_style = "menu/*.png"
+
+  item_font = "Anonymous Pro Regular 36"
+  item_pixmap_style = "item/*.png"
+  item_color = "#3181C6"
+  item_icon_space = 20
+  item_height = 72
+  item_padding = 8
+  item_spacing = 8
+
+  selected_item_font = "Anonymous Pro Bold 36"
+  selected_item_color = "#FFF7D8"
+  selected_item_pixmap_style = "selected/*.png"
+
+  icon_width = 72
+  icon_height = 72
+
+  scrollbar = true
+  scrollbar_frame = "scrollbar_frame/*.png"
+  scrollbar_thumb = "scrollbar_thumb/*.png"
+  scrollbar_thumb_overlay = true
+  scrollbar_top_pad = 8
+  scrollbar_bottom_pad = 48
+  scrollbar_width = 32
+  scrollbar_left_pad = 0
+  scrollbar_right_pad = 0
+  scrollbar_slice = west
+}
+
++ circular_progress {
+  id = "__timeout__"
+  center_bitmap = "framework-logo.png"
+  tick_bitmap = "progress_circle_tick.png"
+  num_ticks = 6
+  start_angle = "-41"
+  left = 1139
+  top = 554
+  width = 288
+  height = 288
+}
+
++ progress_bar {
+        left = 1130
+        top = 998
+        width = 308
+        height = 28
+
+        id = "__timeout__"
+
+        bg_color = "#A59DC2"
+	fg_color = "#3181C6"
+        border_color = "#000000"
+        #font = "Anonymous Pro Regular 36"
+        #text = "@TIMEOUT_NOTIFICATION_LONG@"
+        #text = "@TIMEOUT_NOTIFICATION_MIDDLE@"
+}
