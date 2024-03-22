@@ -11,7 +11,7 @@ terminal-border: "0"
 #terminal-height: "384"
 terminal-width: "100%"
 terminal-height: "100%"
-#terminal-box: "terminal_box/terminal_box_*.png"
+#terminal-box: "terminal_box/*.png"
 
 + label {
         left = 0
